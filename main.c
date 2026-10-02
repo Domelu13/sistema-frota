@@ -33,7 +33,13 @@ int main (){
         total++;
         break;
             case 2:      
-            printf("Tchau\n");
+           
+            for (int i = 0; i < total; i++) {
+                printf("Placa: %s | Km: %d | Tanque: %.2f | Estado: %s | Status: %s\n", 
+               frota[i].placa, frota[i].km, frota[i].tanque, frota[i].estado_do_carro, frota[i].status_atual);
+    }
+    break;
+            
         break;
             case 3:
                 printf("Sair\n");
